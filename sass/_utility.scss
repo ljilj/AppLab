@@ -1,0 +1,22 @@
+.u-container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.u-container-lg {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.u-color-warning {
+    color: var(--color-warning);
+}
+
+.u-color-primary-black {
+    color: var(--color-primary-black);
+}
+
+.u-px {
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+}

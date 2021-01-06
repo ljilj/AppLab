@@ -1,0 +1,28 @@
+.c-icon {
+    display: inline-block;
+    fill: currentColor;
+    width: 1.875rem;
+    height: 1.875rem;
+    margin: 0.5rem;
+}
+
+.c-icon--active {
+    color: var(--color-white);
+}
+
+.c-icon--sm {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.c-icon--top {
+    position: absolute;
+    top: 10%;
+    left: 53%;
+}
+
+.c-icon--right {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+}
