@@ -13,11 +13,6 @@
     &:hover {
         transform: scale(0.9);
     }
-
-    @media (min-width: 991px) {
-        padding-block-start: 0;
-        padding-block-end: 0;
-    }
 }
 
 .c-btn--blue {

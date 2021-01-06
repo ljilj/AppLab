@@ -1,4 +1,4 @@
-.nav__header {
+.c-nav__header {
     display: flex;
     justify-content: space-between;
 
@@ -6,26 +6,27 @@
         max-width: 75rem;
         margin: 0 auto;
     }
+}
 
-    .nav__logo {
-        font-size: 1.5rem;
-        font-weight: bold;
-        padding-block-start: 0.7rem;
-    }
+.c-nav__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-block-start: 0.7rem;
+}
 
-    .nav__toggle {
-        width: 3rem;
-        height: 3rem;
-        border: none;
-        background-color: transparent;
-        color: var(--color-black);
+.c-nav__toggle {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: transparent;
+    color: var(--color-black);
 
-        @media (min-width: 991px) {
-            display: none;
-        }
+    @media (min-width: 991px) {
+        display: none;
     }
 }
-.links__container {
+
+.c-nav-links__container {
     display: none;
     background-color: var(--color-white);
 
