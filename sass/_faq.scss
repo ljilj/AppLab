@@ -12,7 +12,7 @@
     max-width: 45rem;
     margin: 0 auto 3.75rem;
 }
-summary {
+.c-faq__subtitle {
     position: relative;
     padding-inline-start: 3.125rem;
     padding-inline-end: 2.5rem;
@@ -41,7 +41,7 @@ summary {
 details {
     margin-bottom: 1rem; 
 
-    summary::after {
+    .c-faq__subtitle::after {
         position: absolute;
         content: "+";
         right: 1.25rem;
@@ -49,16 +49,16 @@ details {
         font-size: 1.5rem;
     }
 
-    summary::-webkit-details-marker {
+    .c-faq__subtitle::-webkit-details-marker {
         display: none;
     }
 }
 details[open] {
-    summary ~ * {
+    .c-faq__subtitle ~ * {
         animation: sweep .5s ease-in-out;
     }
 
-    summary::after {
+    .c-faq__subtitle::after {
         position: absolute;
         content: "-";
         right: 1.25rem;
