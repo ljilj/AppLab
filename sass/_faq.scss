@@ -1,0 +1,66 @@
+/*** FAQ section ***/
+.c-faq__container {
+    max-width: 65rem;
+    margin: 0 auto;
+}
+.c-faq__title {
+    h2 {
+        margin-block-end: 2.5rem;
+    }
+}
+.c-faq__desc {
+    max-width: 45rem;
+    margin: 0 auto 3.75rem;
+}
+summary {
+    position: relative;
+    padding-inline-start: 3.125rem;
+    padding-inline-end: 2.5rem;
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    border-radius: 0.25rem;
+    background-color: var(--color-grey-light);
+    color: var(--color-grey-dark);
+    outline: none;
+    text-align: left;
+    font-weight: 600;
+    cursor: pointer;
+}
+.c-faq__content {
+    padding-inline-start: 3.125rem;
+    padding-inline-end: 3.125rem;
+    padding-block-start: 1rem;
+    padding-block-end: 3.125rem;
+    background-color: var(--color-grey-light);
+
+    p {
+        max-width: 50rem;
+    }
+}
+details {
+    margin-bottom: 1rem; 
+}
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+    0%    {opacity: 0; margin-top: 0.625rem}
+    100%  {opacity: 1; margin-top: 0}
+}
+details > summary::after {
+    position: absolute;
+    content: "+";
+    right: 1.25rem;
+    top: 0.7rem;
+    font-size: 1.5rem;
+}
+details[open] > summary::after {
+    position: absolute;
+    content: "-";
+    right: 1.25rem;
+    top: 0.7rem;
+    font-size: 1.5rem;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}

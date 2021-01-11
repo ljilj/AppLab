@@ -1,0 +1,78 @@
+/*** Cards section ***/
+.c-cards {
+    h2 {
+        margin-block-end: 2rem;
+    }
+    p {
+        max-width: 39.375rem;
+        margin: 0 auto;
+    }
+}
+
+.c-button-box {
+	width: 13.875rem;
+	margin: 2.1875rem auto;
+	position: relative;
+	border-radius: 1.875rem;
+    background-color: var(--color-white);
+    color: var(--color-white);
+    border: 1px solid #ececec;
+
+}
+
+.c-toggle-btn {
+    padding: 0.9375rem 1.875rem;
+    font-size: 0.8rem;
+	cursor: pointer;
+    background-color: transparent;
+    color: #898a8e;
+    border: none;
+	outline: none;
+	position: relative;
+    text-align: center;
+}
+
+#js-btn {
+    left: 1.5px;
+    right: 1.5px;
+	top: 2px;
+    position: absolute;
+	width: 6.875rem;
+    height: 90%;
+    background-color: var(--color-primary);
+	border-radius: 1.875rem;
+    transition: 0.5s;
+}
+
+.c-cards__container {
+    @media (min-width: $mobile) {
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+}
+
+.c-card__title {
+    padding-block-start: 4.375rem;
+    background-color: #fbfcfd;
+
+    h3 {
+        font-weight: 600;
+    }
+
+    p {
+        padding-block-end: 2.5rem;
+    }
+}
+
+.c-card__desc {
+    margin-block-start: 2.1875rem;
+
+    p {
+        margin-block-start: 1rem;
+        margin-block-end: 1rem;
+    }
+
+    button {
+        margin-block-start: 1.5rem;
+    }
+}
