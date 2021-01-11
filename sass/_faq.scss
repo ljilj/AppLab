@@ -1,5 +1,5 @@
 /*** FAQ section ***/
-.c-faq__container {
+.c-faq {
     max-width: 65rem;
     margin: 0 auto;
 }
@@ -38,7 +38,7 @@
     }
 }
 
-details {
+.c-faq__container {
     margin-bottom: 1rem; 
 
     .c-faq__subtitle::after {
@@ -53,7 +53,7 @@ details {
         display: none;
     }
 }
-details[open] {
+.c-faq__container[open] {
     .c-faq__subtitle ~ * {
         animation: sweep .5s ease-in-out;
     }
