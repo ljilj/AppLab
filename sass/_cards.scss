@@ -9,39 +9,105 @@
     }
 }
 
-.c-button-box {
-	width: 13.875rem;
-	margin: 2.1875rem auto;
-	position: relative;
-	border-radius: 1.875rem;
-    background-color: var(--color-white);
-    color: var(--color-white);
-    border: 1px solid #ececec;
-
+.c-cards-switcher {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-block-start: 3rem;
+    margin-block-end: 1rem;
 }
 
-.c-toggle-btn {
-    padding: 0.9375rem 1.875rem;
-    font-size: 0.8rem;
-	cursor: pointer;
-    background-color: transparent;
-    color: #898a8e;
-    border: none;
-	outline: none;
-	position: relative;
-    text-align: center;
-}
+.c-cards__switcher {
+    position: relative; 
+    width:200px;
+    height:50px;
+    border-radius:25px;
+    margin:20px 0;
 
-#js-btn {
-    left: 1.5px;
-    right: 1.5px;
-	top: 2px;
-    position: absolute;
-	width: 6.875rem;
-    height: 90%;
-    background-color: var(--color-primary);
-	border-radius: 1.875rem;
-    transition: 0.5s;
+    input {
+       appearance: none;  
+       position: relative;
+
+       width: 12.5rem;
+       height: 3.125rem;
+       border-radius: 1.5625rem;
+
+       background-color:var(--color-black);
+       outline:none;
+
+       &:before, &:after {
+          z-index:2;
+
+          position: absolute;
+          top:50%;
+          transform:translateY(-50%);
+
+          color:var(--color-white);
+       }
+       &:before {
+          content: 'Monthly';
+          left: 2.0625rem;
+       }
+       &:after {
+          content: 'Annually';
+          right: 1.75rem;
+       }
+    }
+    label {
+       z-index:1;
+       position: absolute;
+       top: 0.625rem;
+       bottom: 0.625rem;
+       
+       border-radius: 1.25rem;
+    }
+    &.switcher {
+       input {
+          transition:.25s -.1s;
+          &:checked {
+             background-color:var(--color-white);
+             border: 1px solid var(--color-grey-light);
+             &:before {
+                color:var(--color-white);
+                transition: color .5s .2s;
+             }
+             &:after {
+                color:var(--color-grey-light);
+                transition: color .5s;
+             }
+             &+label {
+                left: 0.625rem;
+                right: 6.25rem;
+
+                background:var(--color-primary);
+                
+                transition: left .5s, right .4s .2s;
+             }
+          }
+          &:not(:checked) {
+             background:var(--color-white);
+             border: 1px solid var(--color-grey-light);
+             transition: background .5s -.1s;
+             &:before {
+                color:var(--color-grey-light);;
+                transition: color .5s;
+             }
+             &:after {
+                color:var(--color-white);
+                transition: color .5s .2s;
+             }
+             &+label {
+                left: 6.25rem;
+                right: 0.625rem;
+                
+                background:var(--color-primary);
+                
+                transition: left .4s .2s, right .5s, background .35s -.1s;
+             }
+          }
+       }
+    }
 }
 
 .c-cards__container {

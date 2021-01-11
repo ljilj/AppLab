@@ -13,6 +13,38 @@
     margin: 0 auto;
 }
 
+.u-container--bkg {
+    background: url('../images/ultimate-img.png');
+    background-size: 500px 162%;
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+
+    @media (min-width: 600px) {
+        background-size: 100% 163%;
+        background-position: 100% 10%;
+    }
+
+    @media (min-width: 800px) {
+        background-size: 100% 200%;
+        background-position: 100% 20%;
+    }
+
+    @media (min-width: 800px) {
+        background-size: 100% 220%;
+        background-position: 100% 30%;
+    }
+
+    @media (min-width: 1024px) {
+        background-size: 100% 250%;
+        background-position: 100% 40%;
+    }
+
+    @media (min-width: $desktop-md) {
+        background-size: cover;
+        background-position: 100% 54%;
+    }
+}
+
 .u-color-warning {
     color: var(--color-warning);
 }

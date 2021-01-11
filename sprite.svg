@@ -30,15 +30,8 @@
 <path d="M21 22H11C10.7348 22 10.4804 21.8946 10.2929 21.7071C10.1054 21.5196 10 21.2652 10 21C10 20.7348 10.1054 20.4804 10.2929 20.2929C10.4804 20.1054 10.7348 20 11 20H21C21.2652 20 21.5196 20.1054 21.7071 20.2929C21.8946 20.4804 22 20.7348 22 21C22 21.2652 21.8946 21.5196 21.7071 21.7071C21.5196 21.8946 21.2652 22 21 22Z"/>
 
 </symbol>
-<symbol id="minus" viewBox="0 0 189 56">
-<g clip-path="url(#clip0)">
-<path d="M4.80981 28H184.191" stroke="black" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect/>
-</clipPath>
-</defs>
+<symbol id="minus" viewBox="0 0 512 512">
+<path d="M384 265H128V248H384V265Z"/>
 
 </symbol>
 <symbol id="plus" viewBox="0 0 16 16">

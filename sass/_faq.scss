@@ -37,30 +37,39 @@ summary {
         max-width: 50rem;
     }
 }
+
 details {
     margin-bottom: 1rem; 
+
+    summary::after {
+        position: absolute;
+        content: "+";
+        right: 1.25rem;
+        top: 0.7rem;
+        font-size: 1.5rem;
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
 }
-details[open] summary ~ * {
-    animation: sweep .5s ease-in-out;
-}
+details[open] {
+    summary ~ * {
+        animation: sweep .5s ease-in-out;
+    }
+
+    summary::after {
+        position: absolute;
+        content: "-";
+        right: 1.25rem;
+        top: 0.7rem;
+        font-size: 1.5rem;
+    }
+} 
 @keyframes sweep {
     0%    {opacity: 0; margin-top: 0.625rem}
     100%  {opacity: 1; margin-top: 0}
 }
-details > summary::after {
-    position: absolute;
-    content: "+";
-    right: 1.25rem;
-    top: 0.7rem;
-    font-size: 1.5rem;
-}
-details[open] > summary::after {
-    position: absolute;
-    content: "-";
-    right: 1.25rem;
-    top: 0.7rem;
-    font-size: 1.5rem;
-}
-details > summary::-webkit-details-marker {
-    display: none;
-}
+ 
+
+
