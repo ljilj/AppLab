@@ -3,9 +3,46 @@
     margin: 0 auto;
 }
 
+.u-container-md {
+    max-width: 87.5rem;
+    margin: 0 auto;
+}
+
 .u-container-lg {
     max-width: 100rem;
     margin: 0 auto;
+}
+
+.u-container--bkg {
+    background: url('../images/ultimate-img.png');
+    background-size: 500px 162%;
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+
+    @media (min-width: 600px) {
+        background-size: 100% 163%;
+        background-position: 100% 10%;
+    }
+
+    @media (min-width: 800px) {
+        background-size: 100% 200%;
+        background-position: 100% 20%;
+    }
+
+    @media (min-width: 800px) {
+        background-size: 100% 220%;
+        background-position: 100% 30%;
+    }
+
+    @media (min-width: 1024px) {
+        background-size: 100% 250%;
+        background-position: 100% 40%;
+    }
+
+    @media (min-width: $desktop-md) {
+        background-size: cover;
+        background-position: 100% 54%;
+    }
 }
 
 .u-color-warning {
@@ -23,4 +60,78 @@
 
 .u-ml {
     margin-inline-start: 0.4rem;
+}
+
+.u-my {
+    margin-block-start: 7rem;
+    margin-block-end: 7rem;
+}
+
+.u-img-bkg--round {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+}
+
+.u-img-bkg--round-md {
+    @media (min-width: 1600px) {
+        margin: 0;
+    }
+}
+
+.u-color--alert {
+    color: var(--color-alert);
+}
+
+.u-color--primary {
+    color: var(--color-primary);
+}
+
+.u-color--success {
+    color: var(--color-success);
+}
+
+.u-bkg--alert {
+    background-color: var(--color-alert-light);
+}
+
+.u-bkg--primary {
+    background-color: var(--color-primary-light);
+}
+
+.u-bkg--success {
+    background-color: var(--color-grey-light);
+}
+
+.u-bkg--purple-light {
+    background-color: var(--color-purple-light);
+}
+
+.u-bkg--primary-light {
+    background-color: var(--color-primary-light);
+}
+
+.u-bkg--warning-light {
+    background-color: var(--color-warning-light);
+}
+
+.u-bkg--orange-light {
+    background-color: var(--color-orange-light);
+}
+
+.u-color--grey {
+    color: #999ca5;
+}
+.u-price--size {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+.u-cards--border {
+    border: 2px solid #ebebeb;
 }
