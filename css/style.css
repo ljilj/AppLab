@@ -135,8 +135,17 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 1rem;
   border-radius: 50%;
+}
+
+.u-img-bkg--center {
+  margin: 0 auto 1rem;
+}
+
+@media (min-width: 1024px) {
+  .u-img-bkg--left-md {
+    margin: 0;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -147,14 +156,17 @@ a {
 
 .u-color--alert {
   color: var(--color-alert);
+  font-weight: 600;
 }
 
 .u-color--primary {
   color: var(--color-primary);
+  font-weight: 600;
 }
 
 .u-color--success {
   color: var(--color-success);
+  font-weight: 600;
 }
 
 .u-bkg--alert {
@@ -197,6 +209,10 @@ a {
 
 .u-cards--border {
   border: 2px solid #ebebeb;
+}
+
+.u-opacity {
+  opacity: 0.9;
 }
 
 .c-btn {
@@ -409,6 +425,133 @@ p {
   margin: 1.5rem;
 }
 
+/*** Awesome App section ***/
+.c-awesome-content__container {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .c-awesome-content__container {
+    text-align: left;
+  }
+}
+.c-awesome-content__container h2 {
+  margin-block-end: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .c-awesome-content__container h2 {
+    max-width: 27rem;
+  }
+}
+.c-awesome-content__container p {
+  margin-block-end: 5rem;
+}
+@media (min-width: 1024px) {
+  .c-awesome-content__container p {
+    max-width: 33rem;
+  }
+}
+
+.c-awesome__content {
+  max-width: 18.5rem;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .c-awesome__content {
+    display: flex;
+    max-width: 30rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .c-awesome__img {
+    margin-block-start: 1.5rem;
+  }
+}
+
+.c-awesome__desc p {
+  margin-block-start: 1rem;
+}
+@media (min-width: 1024px) {
+  .c-awesome__desc {
+    margin-inline-start: 1.5rem;
+    max-width: 16.875rem;
+  }
+}
+
+.c-awesome-img__container {
+  position: relative;
+}
+
+.c-awesome-ima-block {
+  position: relative;
+  max-width: 570px;
+  max-height: 390px;
+  margin: 4rem auto 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .c-awesome-ima-block {
+    max-width: 670px;
+    max-height: 490px;
+    margin-block-start: 12rem;
+  }
+}
+
+.c-awesome-img--md {
+  width: 80%;
+  height: 80%;
+  transform: rotateZ(180deg);
+}
+
+.c-awesome-line--md {
+  width: 95%;
+  height: 95%;
+}
+
+.c-awesome-img--sm {
+  width: 26rem;
+  height: 26rem;
+}
+
+.c-awesome-img--left {
+  position: absolute;
+  bottom: 1%;
+  left: 15%;
+  z-index: 60;
+  max-width: 230px;
+  max-height: 230px;
+}
+
+.c-awesome-img--line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  transform: rotateZ(20deg);
+}
+
+.c-awesome-img--rotate {
+  position: absolute;
+  bottom: 0;
+  right: -1%;
+  transform: rotateX(189deg);
+  max-width: 230px;
+}
+
+.c-awesome-img--phone {
+  position: absolute;
+  bottom: -30%;
+  left: 13%;
+  z-index: 100;
+}
+
+.c-awesome-phone--md {
+  width: 80%;
+}
+
 /*** Smart jackpots section ***/
 .c-smart-title__container h2 {
   margin-block-end: 2rem;
@@ -431,7 +574,7 @@ p {
   text-align: center;
   margin-block-end: 2rem;
   padding-block-start: 2rem;
-  width: 18rem;
+  width: 18.5rem;
   margin: 0 auto;
 }
 @media (min-width: 1024px) {

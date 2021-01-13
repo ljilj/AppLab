@@ -13,6 +13,13 @@
     margin: 0 auto;
 }
 
+// .u-container--awesome-bkg {
+//     background: url('../images/awesome-ellipse-img2.png');
+//     background-size: 100px 700px;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+// }
+
 .u-container--bkg {
     background: url('../images/ultimate-img.png');
     background-size: 500px 162%;
@@ -72,9 +79,18 @@
     height: 6rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0 auto 1rem;
+    align-items: center;  
     border-radius: 50%;
+}
+
+.u-img-bkg--center {
+    margin: 0 auto 1rem;
+}
+
+.u-img-bkg--left-md {
+    @media (min-width: $mobile) {
+        margin: 0;
+    }
 }
 
 .u-img-bkg--round-md {
@@ -85,14 +101,17 @@
 
 .u-color--alert {
     color: var(--color-alert);
+    font-weight: 600;
 }
 
 .u-color--primary {
     color: var(--color-primary);
+    font-weight: 600;
 }
 
 .u-color--success {
     color: var(--color-success);
+    font-weight: 600;
 }
 
 .u-bkg--alert {
@@ -134,4 +153,8 @@
 
 .u-cards--border {
     border: 2px solid #ebebeb;
+}
+
+.u-opacity {
+    opacity: 0.9;
 }
