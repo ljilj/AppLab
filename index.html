@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AppLab</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>   
 <div style="display: none;">
     <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg">
+<symbol id="arrow-left" viewBox="0 0 32 32">
+<path d="M10.1 23C10.2863 22.8126 10.3908 22.5592 10.3908 22.295C10.3908 22.0308 10.2863 21.7774 10.1 21.59L5.50001 17H29.05C29.3152 17 29.5696 16.8946 29.7571 16.7071C29.9447 16.5196 30.05 16.2652 30.05 16C30.05 15.7348 29.9447 15.4804 29.7571 15.2929C29.5696 15.1054 29.3152 15 29.05 15H5.53001L10.1 10.43C10.2896 10.2417 10.3967 9.98578 10.3976 9.71854C10.3986 9.4513 10.2933 9.19463 10.105 9.005C9.91671 8.81537 9.66079 8.70831 9.39355 8.70737C9.12631 8.70644 8.86964 8.8117 8.68001 9L2.32001 15.37C2.15208 15.5387 2.0578 15.767 2.0578 16.005C2.0578 16.243 2.15208 16.4713 2.32001 16.64L8.68001 23C8.77297 23.0937 8.88358 23.1681 9.00543 23.2189C9.12729 23.2697 9.258 23.2958 9.39001 23.2958C9.52202 23.2958 9.65273 23.2697 9.77459 23.2189C9.89645 23.1681 10.007 23.0937 10.1 23Z"/>
+
+</symbol>
+<symbol id="arrow-right" viewBox="0 0 32 32">
+<path d="M22 8.99999C21.9063 9.09295 21.8319 9.20356 21.7811 9.32541C21.7303 9.44727 21.7042 9.57798 21.7042 9.70999C21.7042 9.842 21.7303 9.97271 21.7811 10.0946C21.8319 10.2164 21.9063 10.327 22 10.42L26.6 15.02H3.06C2.79478 15.02 2.54043 15.1253 2.35289 15.3129C2.16535 15.5004 2.06 15.7548 2.06 16.02C2.06 16.2852 2.16535 16.5396 2.35289 16.7271C2.54043 16.9146 2.79478 17.02 3.06 17.02H26.58L22 21.59C21.8137 21.7774 21.7092 22.0308 21.7092 22.295C21.7092 22.5592 21.8137 22.8126 22 23C22.1874 23.1862 22.4408 23.2908 22.705 23.2908C22.9692 23.2908 23.2226 23.1862 23.41 23L29.77 16.64C29.8556 16.5579 29.9237 16.4593 29.9702 16.3501C30.0168 16.241 30.0408 16.1236 30.0408 16.005C30.0408 15.8864 30.0168 15.769 29.9702 15.6598C29.9237 15.5507 29.8556 15.4521 29.77 15.37L23.42 8.99999C23.327 8.90626 23.2164 8.83187 23.0946 8.7811C22.9727 8.73033 22.842 8.70419 22.71 8.70419C22.578 8.70419 22.4473 8.73033 22.3254 8.7811C22.2036 8.83187 22.093 8.90626 22 8.99999Z"/>
+
+</symbol>
 <symbol id="check" viewBox="0 0 50 50">
 <path d="M45.293 19.562L45.992 12.879L39.853 10.148L37.123 4.00901L30.44 4.70701L25 0.765015L19.561 4.70701L12.879 4.00901L10.148 10.147L4.009 12.879L4.707 19.561L0.764999 25L4.707 30.438L4.008 37.121L10.147 39.852L12.877 45.991L19.56 45.293L25 49.235L30.439 45.293L37.121 45.991L39.852 39.853L45.991 37.121L45.293 30.439L49.235 25L45.293 19.562ZM43.851 35.885L38.337 38.338L35.884 43.851L29.885 43.225L25 46.765L20.115 43.225L14.115 43.851L11.662 38.337L6.149 35.885L6.775 29.886L3.235 25L6.776 20.115L6.15 14.115L11.664 11.662L14.117 6.14901L20.116 6.77501L25 3.23501L29.885 6.77501L35.885 6.14901L38.338 11.663L43.851 14.115L43.225 20.114L46.765 25L43.224 29.885L43.851 35.885Z"/>
 <path d="M21 31.586L14.707 25.293L13.293 26.707L21 34.414L38.707 16.707L37.293 15.293L21 31.586Z"/>
@@ -69,9 +77,8 @@
 
 </symbol></svg>
 </div>
-
-     <!-- Header section -->
-     <header class="c-header-section">
+    <!-- Header section -->
+    <header class="c-header-section">
         <nav class="c-nav__header">
             <a class="c-nav__logo">
                 <span class="u-color-warning">App</span>Lab
@@ -410,7 +417,118 @@
             </div>
         </div>
     </section>
+
     <!-- End Cards section -->
+    <section class="c-client-section">
+        <div class="u-container-lg">
+            <div class="c-grid c-grid--two">
+                <div class="c-client__container">
+                    <img class="c-client__img-bkg" src="images/world-map.png">
+                    <div class="c-client-img__container">
+                        <img class="c-client-img--1" src="images/client-img1.png">
+                        <img class="c-client-img--2" src="images/client-img2.png">
+                        <img class="c-client-img--3" src="images/client-img3.png">
+                        <img class="c-client-img--5" src="images/client-img5.png">
+                        <img class="c-client-img--6" src="images/client-img6.png">
+                        <img class="c-client-img--7" src="images/client-img7.png">
+                        <img class="c-client-img--8" src="images/client-img8.png">
+                    </div>
+                </div>
+                <div class="c-client__content u-px">
+                    <h2>Meet Client Satisfaction
+                        by using product
+                    </h2>
+                    <p>The rise of mobile devices transfoms the way we consume.
+                        elevant channels such as Facebook.
+                    </p>
+                    <div class="c-slick-slider">
+                        <div class="c-slick-slider__single-item">
+                            <div class="c-slick-slider-icon__container">
+                                <svg class="c-icon">
+                                    <use href="#star"/>
+                                </svg>
+                                <svg class="c-icon">
+                                    <use href="#star"/>
+                                </svg>
+                                <svg class="c-icon">
+                                    <use href="#star"/>
+                                </svg>
+                                <svg class="c-icon">
+                                    <use href="#star"/>
+                                </svg>
+                                <svg class="c-icon">
+                                    <use href="#star"/>
+                                </svg>
+                            </div>
+                            <h3>User friendly & Customizable</h3>
+                            <p>Bring to the table win-win survival strategies to ensure proactive domination.
+                                At the end of the day, going forward, a new normal that has evolved from generation 
+                                X is ont the runway heading towards a streamlined cloud solution. User generated content in
+                                real-time will have multiple touchpoints for offshoring.
+                            </p>
+                            <div class="c-slick-slider-img__container">
+                                <div class="c-slick-slider-img">
+                                    <img src="images/client-img4.png">
+                                </div>
+                                <div class="c-slick-slider-img__info">
+                                    <h4>Zoltan Nemeth</h4>
+                                    <p>CEO of Pixer Lab</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-slick-slider__single-item">
+                            <div class="c-slick-slider-icon__container">
+                                <svg class="c-icon">
+                                    <use href="#star"/>
+                                </svg>
+                                <svg class="c-icon">
+                                    <use href="#star"/>
+                                </svg>
+                                <svg class="c-icon">
+                                    <use href="#star"/>
+                                </svg>
+                                <svg class="c-icon">
+                                    <use href="#star"/>
+                                </svg>
+                                <svg class="c-icon">
+                                    <use href="#star"/>
+                                </svg>
+                            </div>
+                            <h3>User friendly & Customizable</h3>
+                            <p>Bring to the table win-win survival strategies to ensure proactive domination.
+                                At the end of the day, going forward, a new normal that has evolved from generation 
+                                X is ont the runway heading towards a streamlined cloud solution. User generated content in
+                                real-time will have multiple touchpoints for offshoring.
+                            </p>
+                            <div class="c-slick-slider-img__container">
+                                <div class="c-slick-slider-img">
+                                    <img src="images/client-img4.png">
+                                </div>
+                                <div class="c-slick-slider-img__info">
+                                    <h4>Zoltan Nemeth</h4>
+                                    <p>CEO of Pixer Lab</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-slick-slider__arrow">
+                        <div class="prevArrow">
+                            <svg class="c-icon">
+                                <use href="#arrow-left"/>
+                            </svg>
+                        </div>
+                        <hr>
+                        <div class="nextArrow">
+                            <svg class="c-icon">
+                                <use href="#arrow-right"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!-- End Client secction -->
 
     <!-- FAQ section -->
     <section class="c-faq-section u-my">
@@ -535,6 +653,8 @@
     </footer>
     <!-- End Footer section -->
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

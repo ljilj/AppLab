@@ -6,3 +6,15 @@ navToggle.addEventListener('click', function() {
     links.classList.toggle("active-menu");
 });
 
+
+
+// Slick Carousel
+$('.c-slick-slider').slick({
+    prevArrow: '.prevArrow',
+    nextArrow: '.nextArrow'
+});
+
+
+
+
+

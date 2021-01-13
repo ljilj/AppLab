@@ -291,6 +291,105 @@
     }
 }
 
+/*** Client section ***/
+.c-client__container {
+    position: relative;
+    max-width: 90vw;
+    margin: 0 auto;
+
+    @media (min-width: $desktop-lg) {
+        margin-block-start: 8rem;
+    }
+
+    .c-client__img-bkg {
+        height: 37.5rem;
+    }
+}
+
+.c-client-img__container {  
+
+    .c-client-img--1 {
+        position: absolute;
+        top: 30%;
+    }
+    .c-client-img--2 {
+        position: absolute;
+        top: 5%;
+        left: 20%;
+    }
+    .c-client-img--3 {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+    }
+    .c-client-img--5 {
+        position: absolute;
+        top: 30%;
+        left: 70%;
+    }
+    .c-client-img--6 {
+        position: absolute;
+        top: 10%;
+        left: 0;
+    }
+    .c-client-img--7 {
+        position: absolute;
+        top: 5%;
+        left: 70%;
+    }
+    .c-client-img--8 {
+        position: absolute;
+        top: 20%;
+        left: 33%;
+    }
+
+    @media (min-width: 991px) {
+        .c-client-img--1 {
+            top: 30%;
+            left: 10%;
+        }
+        .c-client-img--2 {
+            top: 0;
+            left: 32%;
+        }
+        .c-client-img--3 {
+            bottom: 14%;
+            left: 28%;
+        }
+        .c-client-img--5 {
+            top: 40%;
+            left: 60%;
+        }
+        .c-client-img--6 {
+            top: 10%;
+            left: 5%;
+        }
+        .c-client-img--7 {
+            top: 5%;
+            left: 73%;
+        }
+        .c-client-img--8 {
+            top: 25%;
+            left: 38%;
+        }
+    }  
+}
+
+.c-client__content {
+    max-width: 75vw;
+
+    @media (min-width: $desktop-lg) {
+        max-width: 31.25rem;
+    }
+
+    h2 {
+        margin-block-end: 1.5rem;
+    }
+
+    p {
+        margin-block-end: 2.5rem;
+    }
+}
 
 /*** Download section ***/
 .c-download-content__container {
