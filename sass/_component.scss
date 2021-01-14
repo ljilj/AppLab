@@ -94,6 +94,52 @@
 
 
 /*** Awesome App section ***/
+.c-awesome-img__container {
+    position: relative;
+
+    @media (min-width: 500px) {
+        margin-block-start: 7rem;
+    }
+}
+.c-awesome-ima-block {
+    position: relative;
+    max-width: 570px;
+    max-height: 390px;
+    margin: 4rem auto 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $mobile) {
+        max-width: 670px;
+        max-height: 490px;
+        margin-block-start: 12rem;
+    }
+}
+
+.c-awesome-img--phone {
+    position: absolute;
+    bottom: -3%;
+    left: 0;
+    z-index: 100;
+
+    @media (min-width: 420px) {
+        bottom: -25%;
+    }
+
+    @media (min-width: 520px) {
+        bottom: -30%;
+    }
+
+    @media (min-width: $mobile) {
+        bottom: -20%;
+    }
+
+    @media (min-width: $desktop-md) {
+        left: 7%;
+    }
+}
+
 .c-awesome-content__container {
     text-align: center;
 
@@ -143,73 +189,6 @@
         margin-inline-start: 1.5rem;
         max-width: 16.875rem; 
     }
-}
-
-
-
-.c-awesome-img__container {
-    position: relative;
-}
-.c-awesome-ima-block {
-    position: relative;
-    max-width: 570px;
-    max-height: 390px;
-    margin: 4rem auto 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @media (min-width: $mobile) {
-        max-width: 670px;
-        max-height: 490px;
-        margin-block-start: 12rem;
-    }
-}
-.c-awesome-img--md {
-    width: 80%;
-    height: 80%;
-    transform: rotateZ(180deg);
-}
-.c-awesome-line--md {
-    width: 95%;
-    height: 95%;
-}
-.c-awesome-img--sm {
-    width: 26rem;
-    height: 26rem;
-}
-.c-awesome-img--left {
-    position: absolute;
-    bottom: 1%;
-    left: 15%;
-    z-index: 60;
-    max-width: 230px;
-    max-height: 230px;
-}
-.c-awesome-img--line {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 80;
-    transform: rotateZ(20deg);
-}
-
-.c-awesome-img--rotate {
-    position: absolute;
-    bottom: 0;
-    right: -1%;
-    transform: rotateX(189deg);
-    max-width: 230px;
-}
-
-.c-awesome-img--phone {
-    position: absolute;
-    bottom: -30%;
-    left: 13%;
-    z-index: 100;
-}
-.c-awesome-phone--md {
-    width: 80%;
 }
 
 
