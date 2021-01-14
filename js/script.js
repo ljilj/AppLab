@@ -15,6 +15,10 @@ $('.c-slick-slider').slick({
 });
 
 
+// AOS
+AOS.init();
+
+
 
 
 
