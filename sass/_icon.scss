@@ -1,0 +1,126 @@
+.c-icon {
+    display: inline-block;
+    fill: currentColor;
+    width: 1.875rem;
+    height: 1.875rem;
+    margin: 0.5rem;
+}
+
+.c-icon--active {
+    color: var(--color-white);
+}
+
+.c-icon--colors{
+    --color-1:#FF6E78;
+    --color-2: #09142e;
+}
+
+.c-icon--hero-colors {
+    --color-1:#FF6E78;
+    --color-2: #fff;
+}
+
+.c-icon--hero-colors-purple {
+    --color-1:#d4cdfd;
+    --color-2: #fff;
+}
+
+.c-icon--hero-purple {
+    color: #d4cdfd;
+}
+
+.c-icon--hero-purple {
+    --color-1:#d4cdfd;
+}
+
+.c-icon--primary-dark {
+    --color-1:#09142e;
+    --color-2: #273043;
+}
+
+.c-icon--sm {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.c-icon--md {
+    width: 3rem;
+    height: 3rem;
+}
+
+.c-icon--top {
+    position: absolute;
+    top: 10%;
+    left: 53%;
+    z-index: 3;
+}
+
+.c-icon--right {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    z-index: 4;
+}
+
+.c-icon--circle-top-left {
+    position: absolute;
+    top: 5%;
+    right: 35%;
+    z-index: 2;
+}
+
+.c-icon--circle-top {
+    position: absolute;
+    top: 5%;
+    left: 63%;
+    z-index: 5;
+}
+
+.c-icon--circle-right {
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    z-index: 6;
+}
+
+.c-icon--circle-left {
+    position: absolute;
+    bottom: 23%;
+    left: 20%;
+    z-index: 7;
+}
+
+.c-icon--circle-top {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    z-index: 8;
+}
+
+.c-icon--square-top {
+    position: absolute;
+    top: 17%;
+    left: 37%;
+    z-index: 9;
+}
+
+.c-icon--x-left {
+    position: absolute;
+    top: 65%;
+    left: 0;
+    z-index: 10;
+}
+
+.c-icon--x-center {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    z-index: 11;
+}
+
+.c-icon--plus {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    z-index: 12;
+}

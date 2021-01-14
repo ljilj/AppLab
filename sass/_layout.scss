@@ -1,0 +1,18 @@
+/*** Header ***/
+.c-header-section {
+    margin-block-start: 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    overflow: hidden;
+    background-color: var(--color-white);
+    padding: 1rem 1.5rem;
+    box-shadow: 0 5px var(--color-grey-light);
+}
+
+/*** Footer ***/
+.c-footer-section {
+    background-color: var(--color-primary-dark);
+    padding-block-start: 6.25rem;
+    padding-block-end: 6.25rem;
+}

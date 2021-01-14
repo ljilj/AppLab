@@ -1,0 +1,28 @@
+.c-btn {
+    padding-inline-start: 2.8125rem;
+    padding-inline-end: 2.8125rem;
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: transparent;
+    color: var(--color-white);
+    transition: 0.2s;
+    &:hover {
+        transform: scale(0.9);
+    }
+}
+
+.c-btn--blue {
+    background-color: var(--color-primary);
+}
+
+.c-btn--size {
+    margin: 2rem auto;
+
+    @media (min-width: 991px) {
+        margin: 0;
+    }
+}
