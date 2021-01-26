@@ -77,6 +77,7 @@
 }
 
 .c-hero-img {
+    max-width: 80%;
     margin: 0 auto;
     z-index: 5;
 }
@@ -349,12 +350,12 @@
 }
 
 .c-ultimate-img__container {
-    width: 100%;
+    width: 95%;
     position: relative;
     margin-block-start: 3rem;
 
     @media (min-width: $desktop-md) {
-        width: 40%;
+        width: 35%;
     }
 
     img {
